@@ -1,0 +1,62 @@
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #00295450, #d2b38242);
+}
+
+#areas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #d2b382;
+    color: #002854;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.area-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.area-description {
+    text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+    #areas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .area {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .area {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}
